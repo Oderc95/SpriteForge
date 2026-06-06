@@ -1,153 +1,254 @@
 # 🔥 SpriteForge
 
 <p align="center">
-  <img src="assets/logo.png" width="700" alt="SpriteForge Logo">
+  <img src="assets/logo.png" width="600" alt="SpriteForge Logo">
 </p>
 
 <p align="center">
-  <strong>Transformez vos modèles 3D en sprites 2D isométriques en quelques clics.</strong>
+  <strong>Transformez vos modèles 3D en sprites 2D isométriques en quelques clics</strong>
 </p>
 
 <p align="center">
-  Créé par <strong>Cortex</strong><br>
-  Game dev • Artiste 2D • Animateur 2D • Pixel Artist
+  Créé par <strong>Cortex</strong> | Game dev • Artiste 2D • Animateur • Pixel Artist
 </p>
 
 ---
 
-## 📥 Télécharger
+## ⚡ Fonctionnalités principales
 
-👉 **Télécharger la dernière version :**
-
-**[⬇ Télécharger SpriteForge](https://github.com/VOTRE_COMPTE/SpriteForge/releases/latest)**
-
----
-
-## ✨ Fonctionnalités
-
-* 🧍 Import automatique de personnages FBX animés
-* 🏠 Import d'assets FBX, OBJ, GLB, GLTF et DAE
-* 🎮 Export multi-directions
-* 🖼️ PNG individuels
-* 📦 Spritesheets automatiques
-* 🎬 GIF par direction ou GIF unique
-* 🎨 Mode Pixel Art intégré
-* 🟪 Outline et Dithering
-* 📷 Caméra isométrique automatique
-* ✂️ Auto-crop intelligent
-* 💡 Éclairage optimisé
-* 🗺️ Export de Normal Maps
+✨ **Import automatique** – FBX, OBJ, GLB, GLTF, DAE  
+🎮 **Export multi-directions** – 8 directions par défaut, configurable  
+🖼️ **Formats multiples** – PNG, Spritesheet, GIF par direction, GIF unique  
+🎨 **Pixel Art natif** – Grille, outline, dithering, anti-aliasing  
+📷 **Caméra isométrique** – Orthographique optimisée, zoom, pan, offset  
+✂️ **Auto-crop intelligent** – Détection automatique du cadrage  
+💡 **Éclairage professionnel** – Couleurs mates, ombres, gestion des lumières  
+🗺️ **Normal Maps** – Export de cartes normales  
+🧍 **Personnages animés** – Détection automatique des animations  
+🏠 **Assets statiques** – Rotation multi-directions optimisée  
 
 ---
 
-## ⚙️ Compatibilité
+## 📋 Compatibilité
 
-SpriteForge a été conçu et testé sur :
+| Élément | Exigence |
+|---------|----------|
+| **Blender** | 5.1.1+ |
+| **Python** | 3.11+ |
+| **OS** | Windows, macOS, Linux |
 
-### Blender 5.1.1
-
-> Les autres versions de Blender ne sont pas officiellement supportées.
+> ⚠️ L'utilisation sur d'autres versions de Blender n'est pas officiellement garantie.
 
 ---
 
 ## 🚀 Installation
 
-1. Téléchargez le fichier ZIP de l'addon.
-2. Dans Blender :
+### 1️⃣ Télécharger l'addon
 
-```text
-Edit → Preferences → Add-ons
+Récupérez la dernière version depuis les [Releases](https://github.com/Oderc95/SpriteForge/releases).
+
+### 2️⃣ Installer dans Blender
+
+```
+Édition → Préférences → Add-ons → Installer depuis un fichier
 ```
 
-3. Cliquez sur :
+Sélectionnez le fichier **ZIP** de SpriteForge.
 
-```text
-Install from Disk...
+### 3️⃣ Activer l'addon
+
+Cherchez **Cortex SpriteForge** et cochez la case d'activation.
+
+### 4️⃣ Accéder au panneau
+
+- Ouvrez Blender
+- Allez dans l'onglet **Layout**
+- Appuyez sur **N** pour ouvrir la barre latérale
+- Cliquez sur **SpriteForge**
+
+---
+
+## 🎮 Démarrage rapide
+
+### Mode Personnages (FBX animés)
+
+```
+1. Choisir "Characters"
+2. Sélectionner le dossier contenant les FBX
+3. Cliquer sur "Scanner" (détection automatique)
+4. Vérifier le cadrage dans la caméra
+5. Sélectionner le format d'export
+6. Cliquer sur "Exporter"
 ```
 
-4. Sélectionnez le fichier ZIP.
-5. Activez **Cortex SpriteForge**.
+### Mode Assets (Objets statiques)
+
+```
+1. Choisir "Assets"
+2. Sélectionner le dossier des modèles
+3. Cliquer sur "Scanner"
+4. Définir le nombre de directions
+5. Ajuster le cadrage si nécessaire
+6. Cliquer sur "Exporter"
+```
 
 ---
 
-## 🎮 Ouvrir SpriteForge
+## 🎨 Modes d'export
 
-Après installation :
-
-1. Ouvrez Blender.
-2. Passez dans l'onglet **Layout**.
-3. Placez votre souris dans la vue 3D.
-4. Appuyez sur **N** pour ouvrir la barre latérale.
-5. Cliquez sur l'onglet **SpriteForge**.
-
-Le panneau principal de l'addon apparaît.
+| Format | Description |
+|--------|-------------|
+| **PNG** | Une image par frame |
+| **Spritesheet** | Toutes les frames dans une grille |
+| **GIF Direction** | Un GIF animé par angle |
+| **GIF Unique** | Toutes les directions dans 1 GIF |
+| **Normal Maps** | Cartes normales compatibles moteurs |
 
 ---
 
-## 🛠️ Utilisation rapide
+## 🟪 Mode Pixel Art
 
-### Personnages
+Transformez vos rendus en pixel art authentique avec ces outils :
 
-1. Choisissez **Characters**.
-2. Importez votre dossier FBX.
-3. Vérifiez le cadrage.
-4. Sélectionnez le format d'export.
-5. Cliquez sur **Render**.
+- **Grille de visualisation** – Affiche les pixels en temps réel
+- **Résolutions** – De 16px à 256px
+- **Outline** – Contour automatique (noir ou couleur personnalisée)
+- **Dithering** – Effet rétro Floyd-Steinberg
+- **Anti-aliasing** – Lissage optionnel des bords
+- **Réduction de palette** – Compression des couleurs
 
-### Assets
-
-1. Choisissez **Assets**.
-2. Importez vos modèles.
-3. Choisissez le nombre de directions.
-4. Lancez le rendu.
-
----
-
-## 🎨 Pixel Art
-
-Le mode Pixel Art permet :
-
-* Prévisualisation en pixels
-* Outline automatique
-* Dithering
-* Réduction de résolution
-* Anti-aliasing optionnel
-
-Idéal pour les jeux rétro et RPG isométriques.
+**Configuration recommandée pour pixel art rétro :**
+```
+Pixel Art:        ON
+Outline:          ON (1-2px)
+Anti-aliasing:    OFF
+Dithering:        ON (30-50%)
+```
 
 ---
 
-## ⚠️ Problèmes fréquents
+## 📷 Caméra isométrique
 
-### Le panneau n'apparaît pas
+La caméra SpriteForge est préconfigurée pour les rendus isométriques :
 
-Vérifiez que :
+- **Orthographique** – Pas de perspective
+- **Contrôles rapides** – Zoom, pan, décalage XYZ
+- **Auto-crop** – Détection automatique des marges
+- **Prévisualisation** – Vérification temps réel
 
-* l'addon est activé
-* vous êtes dans **Layout**
-* vous avez appuyé sur **N**
-* l'onglet **SpriteForge** est sélectionné
+**Pour ajuster le cadrage :**
+1. Sélectionner le pivot caméra (CortexCamRig)
+2. Utiliser les contrôles de zoom et pan
+3. Modifier les offsets X/Y/Z si nécessaire
+4. Vérifier le rendu dans la vue caméra
+
+---
+
+## ⚙️ Configuration avancée
+
+### Couleurs mates (Assets Meshy)
+
+Désactive les reflets métalliques excessifs :
+```
+Couleurs mates: ON
+```
+
+### Gestion des ombres
+
+Contrôlez l'aspect des ombres :
+```
+Ombres: ON/OFF
+Lumière principale: Ajuster l'intensité
+Spot supérieur: Pour les assets
+```
+
+### Optimisations pour jeux HD-2D
+
+```
+Pixel Art:       OFF
+Couleurs mates:  ON
+Ombres:          ON
+Anti-aliasing:   ON
+```
+
+---
+
+## ⚠️ Dépannage
+
+### Le panneau SpriteForge n'apparaît pas
+
+✓ Vérifier que l'addon est **activé**  
+✓ Être dans l'espace de travail **Layout**  
+✓ Appuyer sur **N** pour afficher la sidebar  
+✓ Sélectionner l'onglet **SpriteForge**  
 
 ### Les sprites sont coupés
 
-Ajustez le cadrage ou la taille de la caméra.
+→ Augmenter la **largeur/hauteur de la caméra**  
+→ Ajuster les **offsets XYZ**  
 
-### Le rendu est flou
+### Les animations ne sont pas détectées
 
-Désactivez l'anti-aliasing pour le Pixel Art.
+✓ Vérifier la présence d'une **armature**  
+✓ Vérifier les **Actions Blender**  
+✓ Vérifier l'export FBX d'origine  
+
+### Le rendu est flou en Pixel Art
+
+→ Désactiver l'**anti-aliasing**  
+→ Réduire la **résolution pixel**  
+
+### Les modèles sont mal importés
+
+✓ Utiliser les **formats supportés** (FBX, OBJ, GLB, GLTF, DAE)  
+✓ Vérifier les **chemins de fichier** (pas d'espaces)  
+✓ S'assurer que les **matériaux/textures** sont embarqués  
 
 ---
 
-## ❤️ Auteur
+## 📊 Formats supportés
 
-**Cortex**
+**Personnages :**
+- `.fbx` (recommended for animations)
 
-Game dev • Artiste 2D • Animateur • Pixel Artist
-
-Créateur de SpriteForge.
+**Assets :**
+- `.fbx` – Modèles 3D
+- `.obj` – Wavefront OBJ
+- `.glb` – Binary glTF
+- `.gltf` – glTF avec textures
+- `.dae` – COLLADA
 
 ---
 
-<p align="center">
-🔥 Merci d'utiliser SpriteForge 🔥
-</p>
+## 💡 Conseils pro
+
+🎯 **Testez le cadrage d'abord** – Vérifiez dans la vue caméra avant l'export  
+🎯 **Déléguez les lumières** – Utilisez l'éclairage intégré plutôt que des matériaux complexes  
+🎯 **Organisez vos dossiers** – Un dossier = une ressource (FBX + textures)  
+🎯 **Exportez en sous-dossiers** – Gardez vos rendus organisés par direction  
+🎯 **Testez les différentes résolutions** – 64px, 128px ou 256px selon votre jeu  
+
+---
+
+## 🐛 Signaler un bug
+
+Trouvez un problème ? Créez une [Issue](https://github.com/Oderc95/SpriteForge/issues) en décrivant :
+
+- La version de Blender utilisée
+- Les étapes pour reproduire
+- Le message d'erreur (si applicable)
+- Une capture d'écran ou vidéo
+
+---
+
+## 📜 Licence
+
+Ce projet est protégé par sa propre licence. Voir le fichier [LICENSE](LICENSE).
+
+---
+
+## ❤️ Crédit
+
+**Cortex** – Game dev • Artiste 2D • Animateur • Pixel Artist
+
+Merci d'utiliser SpriteForge ! 🔥
