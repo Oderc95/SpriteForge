@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpriteForge - Documentation Officielle</title>
+<style>
+:root{
+--bg:#0f172a;--card:#111827;--accent:#ff8a00;--accent2:#8b5cf6;--text:#f8fafc;--muted:#cbd5e1;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(135deg,#0f172a,#1e1b4b);color:var(--text)}
+.layout{display:grid;grid-template-columns:260px 1fr 220px;min-height:100vh}
+aside,nav{position:sticky;top:0;height:100vh;overflow:auto;padding:20px;background:rgba(0,0,0,.25);backdrop-filter:blur(10px)}
+main{padding:30px;max-width:1100px}
+a{color:#fbbf24;text-decoration:none}
+.hero,.card{background:rgba(255,255,255,.06);border-radius:18px;padding:24px;margin-bottom:20px}
+.hero h1{font-size:3rem;margin:0}
+.tag{display:inline-block;padding:6px 12px;background:#22c55e;border-radius:999px;font-weight:bold}
+h2{color:#fbbf24;border-bottom:2px solid #374151;padding-bottom:8px}
+.warning{background:#7f1d1d;padding:14px;border-radius:12px}
+.tip{background:#064e3b;padding:14px;border-radius:12px}
+code{background:#000;padding:2px 6px;border-radius:6px}
+ul li{margin:8px 0}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+<h2>📚 Rubriques</h2>
+<a href="#presentation">Présentation</a><br><br>
+<a href="#features">Fonctionnalités</a><br><br>
+<a href="#install">Installation</a><br><br>
+<a href="#workflow">Workflow</a><br><br>
+<a href="#characters">Mode Personnages</a><br><br>
+<a href="#assets">Mode Assets</a><br><br>
+<a href="#pixelart">Pixel Art</a><br><br>
+<a href="#camera">Caméra Isométrique</a><br><br>
+<a href="#export">Export</a><br><br>
+<a href="#errors">Erreurs à éviter</a><br><br>
+<a href="#faq">FAQ</a>
+</aside>
+
+<main>
+<section class="hero">
+<p class="tag">Blender 5.1.1</p>
+<h1>🔥 SpriteForge</h1>
+<p>Créé par <strong>Cortex Game Dev</strong> – Artiste, animateur 2D et Pixel Artist.</p>
+<p><strong>Important :</strong> l'addon a été conçu et testé sur Blender 5.1.1.</p>
+<p>Ajoutez votre logo dans <code>assets/logo.png</code> puis remplacez la bannière par votre image.</p>
+</section>
+
+<section id="presentation" class="card">
+<h2>🎮 Présentation</h2>
+<p>SpriteForge transforme automatiquement vos modèles 3D en sprites 2D isométriques prêts pour le jeu vidéo. Il permet d'importer des personnages animés ou des assets statiques, de générer des spritesheets, GIFs, PNG individuels et même des rendus Pixel Art.</p>
+</section>
+
+<section id="features" class="card">
+<h2>✨ Fonctionnalités principales</h2>
+<ul>
+<li>Import automatique FBX, OBJ, GLB, GLTF et DAE.</li>
+<li>Export multi-directions (8 directions par défaut).</li>
+<li>Spritesheets automatiques.</li>
+<li>GIF par direction ou GIF global.</li>
+<li>PNG individuels.</li>
+<li>Normal Maps exportables.</li>
+<li>Auto-crop intelligent.</li>
+<li>Mode Pixel Art avec grille, contour et dithering.</li>
+<li>Caméra isométrique automatisée.</li>
+<li>Gestion des sous-dossiers d'origine.</li>
+<li>Éclairage optimisé pour personnages et assets.</li>
+</ul>
+</section>
+
+<section id="install" class="card">
+<h2>⚙️ Installation</h2>
+<ol>
+<li>Télécharger le fichier ZIP de l'addon.</li>
+<li>Dans Blender : Édition → Préférences → Add-ons.</li>
+<li>Cliquer sur <strong>Installer depuis un fichier</strong>.</li>
+<li>Sélectionner le ZIP.</li>
+<li>Activer <strong>Cortex SpriteForge</strong>.</li>
+<li>Ouvrir le panneau : Vue 3D → Sidebar → SpriteForge.</li>
+</ol>
+</section>
+
+<section id="workflow" class="card">
+<h2>🚀 Workflow recommandé</h2>
+<ol>
+<li>Créer la caméra SpriteForge.</li>
+<li>Importer vos personnages ou assets.</li>
+<li>Vérifier le cadrage.</li>
+<li>Choisir la taille du sprite.</li>
+<li>Configurer les directions.</li>
+<li>Activer Pixel Art si nécessaire.</li>
+<li>Lancer l'export.</li>
+</ol>
+</section>
+
+<section id="characters" class="card">
+<h2>🧍 Mode Personnages</h2>
+<p>Le mode Personnages est conçu pour les FBX animés.</p>
+<ul>
+<li>Scan automatique du dossier.</li>
+<li>Détection des animations.</li>
+<li>Synchronisation automatique des frames.</li>
+<li>Export individuel ou global.</li>
+<li>Gestion du root motion.</li>
+</ul>
+</section>
+
+<section id="assets" class="card">
+<h2>🏠 Mode Assets</h2>
+<ul>
+<li>Import d'objets statiques.</li>
+<li>Rotation automatique sur plusieurs directions.</li>
+<li>Optimisé pour décors, objets et props.</li>
+<li>Éclairage dédié avec Spot supérieur.</li>
+</ul>
+</section>
+
+<section id="pixelart" class="card">
+<h2>🟪 Pixel Art</h2>
+<ul>
+<li>Grille de visualisation temps réel.</li>
+<li>Résolutions : 16 à 256 px.</li>
+<li>Contour automatique.</li>
+<li>Dithering Floyd-Steinberg.</li>
+<li>Réduction NEAREST pour des pixels nets.</li>
+<li>Anti-aliasing optionnel.</li>
+</ul>
+<div class="tip">
+💡 Pour un rendu rétro authentique, désactivez l'anti-aliasing et activez un contour noir de 1 px.
+</div>
+</section>
+
+<section id="camera" class="card">
+<h2>📷 Caméra Isométrique</h2>
+<p>SpriteForge crée automatiquement une caméra orthographique optimisée pour les sprites isométriques.</p>
+<ul>
+<li>Zoom rapide.</li>
+<li>Pan caméra.</li>
+<li>Décalage X/Y/Z.</li>
+<li>Recadrage automatique.</li>
+<li>Prévisualisation Pixel Art.</li>
+</ul>
+</section>
+
+<section id="export" class="card">
+<h2>📦 Formats d'export</h2>
+<ul>
+<li><strong>PNG</strong> : une image par frame.</li>
+<li><strong>Spritesheet</strong> : toutes les animations regroupées.</li>
+<li><strong>GIF Direction</strong> : un GIF par angle.</li>
+<li><strong>GIF Unique</strong> : toutes les directions dans une seule animation.</li>
+<li><strong>Normal Maps</strong> : génération de cartes normales.</li>
+</ul>
+</section>
+
+<section id="errors" class="card">
+<h2>⚠️ Erreurs à éviter</h2>
+<div class="warning">
+<ul>
+<li>Ne pas utiliser une version Blender inférieure à 5.1.1.</li>
+<li>Éviter les animations sans armature valide.</li>
+<li>Ne pas supprimer la caméra SpriteForge après configuration.</li>
+<li>Vérifier les chemins d'export avant le rendu.</li>
+<li>Ne pas mélanger plusieurs personnages dans le même export sans contrôle du cadrage.</li>
+<li>Attention aux modèles avec matériaux métalliques excessifs.</li>
+</ul>
+</div>
+</section>
+
+<section id="faq" class="card">
+<h2>❓ FAQ</h2>
+<p><strong>Quelle version Blender ?</strong><br>Conçu sur Blender 5.1.1.</p>
+<p><strong>Peut-on exporter des spritesheets ?</strong><br>Oui.</p>
+<p><strong>Le Pixel Art est-il natif ?</strong><br>Oui, avec grille, contour et dithering.</p>
+<p><strong>Formats supportés ?</strong><br>FBX, OBJ, GLB, GLTF, DAE.</p>
+</section>
+</main>
+
+<nav>
+<h3>🧭 Navigation rapide</h3>
+<p>Présentation</p>
+<p>Installation</p>
+<p>Tutoriel</p>
+<p>Pixel Art</p>
+<p>Caméra</p>
+<p>Export</p>
+<p>FAQ</p>
+</nav>
+</div>
+</body>
+</html>
