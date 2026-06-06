@@ -5,413 +5,146 @@
 </p>
 
 <p align="center">
-  <strong>Transformez vos modèles 3D en sprites 2D isométriques professionnels directement depuis Blender.</strong>
+  <strong>Transformez vos modèles 3D en sprites 2D isométriques en quelques clics.</strong>
 </p>
 
 <p align="center">
   Créé par <strong>Cortex</strong><br>
-  Game dev • Artiste 2D • Animateur • Pixel Artist
+  Game dev • Artiste 2D • Animateur 2D • Pixel Artist
 </p>
 
 ---
 
-## 📖 Présentation
+## 📥 Télécharger
 
-SpriteForge est un addon Blender conçu pour automatiser la création de sprites 2D à partir de modèles 3D.
+👉 **Télécharger la dernière version :**
 
-Il permet de générer rapidement :
-
-* Sprites PNG individuels
-* Spritesheets complètes
-* GIF animés
-* Normal Maps
-* Sprites Pixel Art
-* Assets isométriques multi-directions
-
-L'objectif est de supprimer les tâches répétitives liées au rendu de personnages et d'assets destinés aux jeux 2D.
+**[⬇ Télécharger SpriteForge](https://github.com/VOTRE_COMPTE/SpriteForge/releases/latest)**
 
 ---
 
 ## ✨ Fonctionnalités
 
-### 🧍 Personnages animés
-
-* Import automatique des personnages FBX
-* Détection des animations
-* Synchronisation automatique des plages de frames
-* Export d'une animation spécifique
-* Export de toutes les animations
-* Gestion du Root Motion
-
-### 🏠 Assets statiques
-
-Formats supportés :
-
-* FBX
-* OBJ
-* GLB
-* GLTF
-* DAE
-
-Fonctionnalités :
-
-* Import automatique
-* Rotation multi-directions
-* Cadrage automatique
-* Export optimisé pour les jeux 2D
-
-### 🎨 Pixel Art intégré
-
-* Prévisualisation temps réel
-* Grille Pixel Art
-* Résolutions de 16 à 256 pixels
-* Outline automatique
-* Dithering Floyd-Steinberg
-* Anti-aliasing optionnel
-* Réduction de palette
-
-### 📦 Formats d'export
-
-* PNG
-* Spritesheet
-* GIF par direction
-* GIF unique
-* Normal Maps
-
-### 💡 Optimisations visuelles
-
-* Couleurs mates anti-métalliques
-* Gestion des ombres
-* Éclairage optimisé
-* Auto-crop intelligent
-* Caméra orthographique isométrique
+* 🧍 Import automatique de personnages FBX animés
+* 🏠 Import d'assets FBX, OBJ, GLB, GLTF et DAE
+* 🎮 Export multi-directions
+* 🖼️ PNG individuels
+* 📦 Spritesheets automatiques
+* 🎬 GIF par direction ou GIF unique
+* 🎨 Mode Pixel Art intégré
+* 🟪 Outline et Dithering
+* 📷 Caméra isométrique automatique
+* ✂️ Auto-crop intelligent
+* 💡 Éclairage optimisé
+* 🗺️ Export de Normal Maps
 
 ---
 
-# ⚙️ Compatibilité
+## ⚙️ Compatibilité
 
-SpriteForge a été :
+SpriteForge a été conçu et testé sur :
 
-* développé
-* testé
-* optimisé
+### Blender 5.1.1
 
-sur :
-
-## Blender 5.1.1
-
-> ⚠️ L'utilisation sur une autre version de Blender n'est pas officiellement garantie.
+> Les autres versions de Blender ne sont pas officiellement supportées.
 
 ---
 
-# 🚀 Installation
+## 🚀 Installation
 
-## 1. Installer l'addon
-
-Dans Blender :
+1. Téléchargez le fichier ZIP de l'addon.
+2. Dans Blender :
 
 ```text
-Edit
-└── Preferences
-    └── Add-ons
+Edit → Preferences → Add-ons
 ```
 
-Cliquez sur :
+3. Cliquez sur :
 
 ```text
 Install from Disk...
 ```
 
-Sélectionnez le fichier ZIP de SpriteForge puis activez :
-
-```text
-Cortex SpriteForge
-```
+4. Sélectionnez le fichier ZIP.
+5. Activez **Cortex SpriteForge**.
 
 ---
 
-## 2. Ouvrir SpriteForge
+## 🎮 Ouvrir SpriteForge
 
-Une fois l'addon installé :
+Après installation :
 
-1. Ouvrez Blender
-2. Passez dans l'onglet :
+1. Ouvrez Blender.
+2. Passez dans l'onglet **Layout**.
+3. Placez votre souris dans la vue 3D.
+4. Appuyez sur **N** pour ouvrir la barre latérale.
+5. Cliquez sur l'onglet **SpriteForge**.
 
-```text
-Layout
-```
-
-3. Placez votre souris dans la vue 3D
-4. Appuyez sur :
-
-```text
-N
-```
-
-pour ouvrir la Sidebar Blender.
-
-5. Sélectionnez l'onglet :
-
-```text
-SpriteForge
-```
-
-Le panneau principal de l'addon apparaît alors.
+Le panneau principal de l'addon apparaît.
 
 ---
 
-# 🎮 Workflow Personnages
+## 🛠️ Utilisation rapide
 
-## Étape 1
+### Personnages
 
-Choisissez :
+1. Choisissez **Characters**.
+2. Importez votre dossier FBX.
+3. Vérifiez le cadrage.
+4. Sélectionnez le format d'export.
+5. Cliquez sur **Render**.
 
-```text
-Characters
-```
+### Assets
 
----
-
-## Étape 2
-
-Sélectionnez votre dossier contenant :
-
-* FBX
-* Textures
-* Animations
-
-SpriteForge analyse automatiquement le contenu.
+1. Choisissez **Assets**.
+2. Importez vos modèles.
+3. Choisissez le nombre de directions.
+4. Lancez le rendu.
 
 ---
 
-## Étape 3
+## 🎨 Pixel Art
 
-Cliquez sur :
+Le mode Pixel Art permet :
 
-```text
-Import Characters
-```
+* Prévisualisation en pixels
+* Outline automatique
+* Dithering
+* Réduction de résolution
+* Anti-aliasing optionnel
 
----
-
-## Étape 4
-
-Vérifiez le cadrage dans la vue caméra.
-
-SpriteForge crée automatiquement :
-
-* la caméra orthographique
-* le rig caméra
-* l'éclairage principal
+Idéal pour les jeux rétro et RPG isométriques.
 
 ---
 
-## Étape 5
+## ⚠️ Problèmes fréquents
 
-Choisissez la taille de sprite :
+### Le panneau n'apparaît pas
 
-```text
-32
-48
-64
-96
-128
-192
-256
-384
-512
-1024
-```
+Vérifiez que :
 
----
+* l'addon est activé
+* vous êtes dans **Layout**
+* vous avez appuyé sur **N**
+* l'onglet **SpriteForge** est sélectionné
 
-## Étape 6
+### Les sprites sont coupés
 
-Choisissez le format d'export :
+Ajustez le cadrage ou la taille de la caméra.
 
-### PNG
+### Le rendu est flou
 
-Une image par frame.
-
-### Spritesheet
-
-Toutes les frames regroupées.
-
-### GIF_DIR
-
-Un GIF par direction.
-
-### GIF_ONE
-
-Toutes les directions dans un GIF unique.
+Désactivez l'anti-aliasing pour le Pixel Art.
 
 ---
 
-## Étape 7
+## ❤️ Auteur
 
-Cliquez sur :
-
-```text
-Render
-```
-
-SpriteForge génère automatiquement les fichiers exportés.
-
----
-
-# 🏠 Workflow Assets
-
-Passez en mode :
-
-```text
-Assets
-```
-
-Puis :
-
-1. Sélectionnez votre dossier d'assets
-2. Importez les modèles
-3. Choisissez le nombre de directions
-4. Réglez le cadrage
-5. Lancez l'export
-
----
-
-# 🎨 Utilisation du mode Pixel Art
-
-Activez :
-
-```text
-Pixel Art
-```
-
-Options disponibles :
-
-| Fonction      | Description                 |
-| ------------- | --------------------------- |
-| Grille        | Prévisualisation des pixels |
-| Outline       | Contour automatique         |
-| Dithering     | Effet rétro                 |
-| Anti-Aliasing | Lissage des bords           |
-| Résolution    | 16 à 256 px                 |
-
-### Configuration recommandée
-
-#### Pixel Art rétro
-
-```text
-Pixel Art       ON
-Outline         ON
-Anti-Aliasing   OFF
-Dithering       ON
-```
-
-#### Pixel Art moderne
-
-```text
-Pixel Art       ON
-Outline         OFF
-Anti-Aliasing   ON
-Dithering       OFF
-```
-
----
-
-# 📷 Caméra SpriteForge
-
-SpriteForge utilise une caméra orthographique spécialement configurée pour les rendus isométriques.
-
-Paramètres disponibles :
-
-* Largeur
-* Hauteur
-* Offset X
-* Offset Y
-* Offset Z
-
-Le recadrage est ensuite effectué automatiquement lors du rendu.
-
----
-
-# ⚠️ Erreurs fréquentes
-
-## Le panneau SpriteForge n'apparaît pas
-
-Vérifiez :
-
-* que l'addon est activé
-* que vous êtes dans l'espace de travail Layout
-* que vous avez appuyé sur N
-* que l'onglet SpriteForge est sélectionné
-
----
-
-## Les sprites sont coupés
-
-Augmentez :
-
-* Largeur caméra
-* Hauteur caméra
-
----
-
-## Les animations ne sont pas détectées
-
-Vérifiez :
-
-* la présence d'une armature
-* la présence d'Actions Blender
-* l'export FBX d'origine
-
----
-
-## Le rendu est flou
-
-Pour un rendu Pixel Art :
-
-```text
-Anti-Aliasing OFF
-```
-
----
-
-# 💡 Conseils
-
-### Assets générés avec Meshy
-
-Activez :
-
-```text
-Couleurs mates
-```
-
-pour supprimer les reflets métalliques excessifs.
-
-### Jeux HD-2D
-
-Configuration recommandée :
-
-```text
-Pixel Art OFF
-Couleurs mates ON
-Ombres OFF
-```
-
----
-
-# ❤️ Auteur
-
-## Cortex
+**Cortex**
 
 Game dev • Artiste 2D • Animateur • Pixel Artist
 
 Créateur de SpriteForge.
-
----
-
-# 📜 Licence
-
-Voir le fichier `LICENSE`.
 
 ---
 
